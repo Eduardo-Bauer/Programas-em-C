@@ -1,0 +1,28 @@
+// exer 7 lista 4
+// Autor : Eduardo Bauer
+// Data : 24/11/2023
+#include<stdio.h>
+void main()
+{
+         int a[15], i, j, aux;
+         for(i=0;i<15;i++){
+                  printf("digite os valores de a\n");
+                  scanf("%d", &a[i]);
+         }
+         for(i=0;i<15;i++){
+                  printf("%d ", a[i]);
+         }
+         for(i=0;i<15;i++){
+                  for(j=i+1;j<15;j++){
+                           if(a[i] > a[j]){
+                                    aux = a[i];
+                                    a[i] = a[j];
+                                    a[j] = aux;
+                           }
+                  }
+         }
+         printf("\n");
+         for(i=0;i<15;i++){
+                  printf("%d ", a[i]);
+         }
+}

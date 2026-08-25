@@ -1,0 +1,17 @@
+// exer 6
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, a, b, soma;
+         a = 0; 
+         b = 1;
+         for(i=0;i<10;i++){
+                  soma = a+b;
+                  a = b;
+                  b = soma;
+                  printf("%d\n", soma);
+         }
+         
+}

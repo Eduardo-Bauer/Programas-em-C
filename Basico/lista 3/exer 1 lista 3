@@ -1,0 +1,18 @@
+// exer 1 lista 3
+// Autor : Eduardo Bauer
+// Data : 13/10/2023
+#include<stdio.h>
+void main()
+{
+         int n, contador, negativos;
+         do{
+                  printf("digite um valor\n");
+                  scanf("%d", &n);
+
+                  if(n<0){
+                           negativos++;
+                  }
+                  contador++;
+         }while(contador<5);
+         printf("%d", negativos);
+}

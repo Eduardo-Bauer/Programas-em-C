@@ -1,0 +1,34 @@
+#include <stdio.h>
+#define n 12
+void le_matriz(float mat[n][n]){
+  int i,j;
+  for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+      scanf("%f", &mat[i][j]);
+    }
+  }
+}
+float soma_ou_media(float mat[n][n], char soum){
+  int i, j; 
+  float soma = 0.0;
+  for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+      if(j < n-1-i){
+        soma += mat[i][j];
+      }
+    }
+  }
+  if(soum == 'S'){
+    return soma;
+  }else{
+    return soma/(((n*n)-n)/2);
+  }
+}
+int main(){
+  float mat[n][n], resultado;
+  char soum;
+  scanf("%c", &soum);
+  le_matriz(mat);
+  resultado = soma_ou_media(mat, soum);
+  printf("%.1f\n", resultado);
+}

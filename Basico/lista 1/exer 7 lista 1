@@ -1,0 +1,22 @@
+// exer 7 lista 1
+// Autor : Eduardo Bauer
+// Data : 02/01/2024
+#include<stdio.h>
+void main()
+{
+         int tipo1, tipo2;
+         float valor1, valor2, ipi, valor;
+         printf("digite a quantidade de pecas do tipo 1 e seu valor\n");
+         scanf("%d%f", &tipo1, &valor1);
+         printf("digite a quantidade de pecas do tipo 2 e seu valor\n");
+         scanf("%d%f", &tipo2, &valor2);
+         printf("digite o percentual do ipi\n");
+         scanf("%f", &ipi);
+         tipo1 = tipo1 * valor1;
+         tipo2 = tipo2 * valor2;
+         valor = tipo1 + tipo2;
+         ipi = ipi/100;
+         ipi = valor * ipi;
+         valor = valor + ipi;
+         printf("o valor total deu %f", valor);
+}

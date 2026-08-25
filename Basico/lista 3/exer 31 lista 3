@@ -1,0 +1,29 @@
+// exer 31
+// Autor : Eduardo Bauer
+// Data : 16/10/2023
+#include<stdio.h>
+void main()
+{
+         int idade, sexo, olhos, cabelos, maior, feminino;
+         maior = 0;
+         do{
+                  printf("digite a idade\n");
+                  scanf("%d", &idade);
+                  if(idade>0){
+                           printf("digite o sexo, sendo 1 para masculino e 2 para feminino\n");
+                           scanf("%d", &sexo);
+                           printf("digite a cor dos olhos, 1 para azuis, 2 para verdes e 3 para castanhos\n");
+                           scanf("%d", &olhos);
+                           printf("digite a cor dos cabelos, 1 para louros, 2 para castanhos e 3 para pretos\n");
+                           scanf("%d", &cabelos);
+                           if(idade>maior){
+                                    maior = idade;
+                           }
+                           if(sexo==2 && idade>=18 && idade<=24 && olhos==2 && cabelos==1){
+                                    feminino++;
+                           }
+                  }
+         }while(idade>0);
+         printf("a maior idade é %d\n", maior);
+         printf("a quantidade de mulheres com idade entre 18 e 24, tendo olhos verdes e cabelos louros é %d\n", feminino);
+}

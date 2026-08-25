@@ -1,0 +1,45 @@
+// exer 15
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, codigo;
+         float n, media, maior, segundo, n3;
+         do{
+               maior = 0;
+               segundo = 0;
+               media = 0;
+               printf("digite o codigo do aluno\n");
+               scanf("%d", &codigo);
+               if(codigo>0){
+                        for(i=0;i<3;i++){
+                           printf("digite a nota\n");
+                           scanf("%f", &n);
+                           if(n>maior){
+                                    n3 = segundo;
+                                    segundo = maior;
+                                    maior = n;
+                           } else{
+                                    if(n>=segundo){
+                                             n3 = segundo;
+                                             segundo = n;
+                                    } else {
+                                             if(n<segundo){
+                                                      n3 = n;
+                                             }
+                                    }
+                           }
+                        }
+                        media =(4*maior + 3*segundo + 3*n3)/10;
+                        printf("codigo do aluno: %d\n", codigo);
+                        printf("notas lidas: %f, %f, %f\n", maior, segundo, n3);
+                        printf("media: %f\n", media); 
+                        if(media<5){
+                        printf("reprovado\n");
+                        } else {
+                        printf("aprovado\n");
+                        }
+              }
+         }while(codigo>0);
+}

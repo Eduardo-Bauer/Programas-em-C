@@ -1,0 +1,22 @@
+// exer 4 lista 1
+// Autor : Eduardo Bauer
+// Data : 28/12/2023
+#include<stdio.h>
+void main()
+{
+         int a, b, c, triangulo, circulo, trapezio, quadrado, retangulo, cubo;
+         printf("digite os valor de a, b, c\n");
+         scanf("%d%d%d", &a, &b, &c);
+         triangulo = (a*b)/2;
+         circulo = 3.14 * c*c;
+         trapezio = ((a-b)*c)/2;
+         quadrado = b*b;
+         retangulo = a*b;
+         cubo = 6*(c*c);
+         printf("%d\n", triangulo);
+         printf("%d\n", circulo);
+         printf("%d\n", trapezio);
+         printf("%d\n", quadrado);
+         printf("%d\n", retangulo);
+         printf("%d\n", cubo);
+}

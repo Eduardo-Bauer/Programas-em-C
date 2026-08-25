@@ -1,0 +1,20 @@
+// exer 23
+// Autor : eduar
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, n, a1, r, soma;
+         printf("digite quantos termos: \n");
+         scanf("%d", &n);
+         printf("digite o primeiro termo: \n");
+         scanf("%d", &a1);
+         soma = a1;
+         printf("digite a razao da progressão: \n");
+         scanf("%d", &r);
+         for(i=1;i<=n;i++){
+                  soma = soma+r;
+                  printf("a%d = %d\n", i, soma); 
+                  
+         }
+}

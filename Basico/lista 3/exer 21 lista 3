@@ -1,0 +1,32 @@
+// exer 21
+// Autor : eduar
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, n, rato, coelhos, codigo;
+         coelhos = 0;
+         rato = 0;
+         for(i=0;i<15;){
+                  printf("digite o codigo da cobaia:\n");
+                  scanf("%d", &codigo);
+                  if(codigo==1 || codigo==2){
+                           printf("digite o numero de cobaias:\n");
+                           scanf("%d", &n);
+                           if(codigo==1){
+                                    coelhos = coelhos+n;
+                           } else {
+                                    if(codigo==2){
+                                             rato = rato+n;
+                                    }
+                           }
+                           i++;
+                  }
+         }
+         printf("total = %d\n", coelhos+rato);
+         printf("coelhos = %d\n", coelhos);
+         printf("rato = %d\n", rato);
+         printf("percentagem de coelhos = %d\n", coelhos*100/(coelhos+rato));
+         printf("percentagem de rato = %d\n", rato*100/(coelhos+rato));
+         
+}

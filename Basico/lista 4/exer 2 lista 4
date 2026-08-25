@@ -1,0 +1,17 @@
+// exer 2 lista 4
+// Autor : Eduardo Bauer
+// Data : 21/11/2023
+#include<stdio.h>
+void main()
+{
+         int a[10], i;
+         for(i=0;i<10;i++){
+                  printf("digite os valores de a\n");
+                  scanf("%d", &a[i]);
+         }
+         for(i=0;i<10;i++){
+                  if(a[i]==5){
+                           printf("%d ", a[i]);
+                  }
+         }
+}

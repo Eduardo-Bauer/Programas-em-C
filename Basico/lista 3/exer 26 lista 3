@@ -1,0 +1,24 @@
+// exer 26
+// Autor : Eduardo Bauer
+// Data : 15/10/2023
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+         int m, n, fatorial, i, j;
+         float raiz;
+         printf("digite quantos valores devem ser lidos\n");
+         scanf("%d", &n);
+         fatorial = 1;
+         for(i=0;i<n;i++){
+                  printf("digite o valor\n");
+                  scanf("%d", &m);
+                  for(j=1;j<=m;j++){
+                           fatorial = fatorial*j;
+                  }
+                  raiz = pow(m, 1.0/3.0);
+                  printf("valor lido: %d\n", m);
+                  printf("seu fatorial: %d\n", fatorial);
+                  printf("sua raiz cubica: %f\n", raiz);
+         }
+}

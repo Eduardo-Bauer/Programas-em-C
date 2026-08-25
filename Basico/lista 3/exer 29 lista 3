@@ -1,0 +1,35 @@
+// exer 29
+// Autor : Eduardo Bauer
+// Data : 16/10/2023
+#include<stdio.h>
+void main()
+{
+         int a, b, c, d, e, num, a1, a2, a3, a4, a5, acertos, nota;
+         printf("digite o gabarito da prova, por, a, b, c, d e e\n");
+         scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
+         do{
+                  acertos=0;
+                  printf("digite o numero do aluno\n");
+                  scanf("%d", &num);
+                  printf("digite as respostas no aluno\n");
+                  scanf("%d%d%d%d%d", &a1, &a2, &a3, &a4, &a5);
+                  if(a1==a){
+                           acertos++;
+                  }
+                  if(a2==b){
+                           acertos++;
+                  }
+                  if(a3==c){
+                           acertos++;
+                  }
+                  if(a4==d){
+                           acertos++;
+                  }
+                  if(a5==e){
+                           acertos++;
+                  }
+                  printf("o aluno %d\n", num);
+                  printf("acertou: %d\n", acertos);
+                  printf("nota: %d\n", acertos*2);
+         }while(num>0);
+}

@@ -1,0 +1,14 @@
+//exer 1 lista 1
+// Autor : Eduardo Bauer
+// Data : 28/12/2023
+#include<stdio.h>
+void main()
+{
+         float valor1, valor2, media;
+         printf("digite o primeiro valor:\n");
+         scanf("%f", &valor1);
+         printf("digite o segundo valor:\n");
+         scanf("%f", &valor2);
+         media = (valor1 + valor2)/2;
+         printf("sua media ficou %f", media);
+}

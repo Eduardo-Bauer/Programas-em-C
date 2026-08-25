@@ -1,0 +1,36 @@
+// exer 41
+// Autor : Eduardo Bauer
+// Data : 18/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, idade, sexo, altura, mulher, homem;
+         float mediaidade, mediaaltura, mediaidadem, percentual;
+         mulher = 0;
+         homem = 0;
+         for(i=0;i<4;i++){
+                  printf("digite seu sexo, sendo 0 para feminino e 1 para masculino\n");
+                  scanf("%d", &sexo);
+                  printf("digite seu idade\n");
+                  scanf("%d", &idade);
+                  printf("digite sua altura\n");
+                  scanf("%d", &altura);
+                  if(sexo==0){
+                           mediaaltura = mediaaltura+altura;
+                           mulher++;
+                  } else {
+                           if(sexo==1){
+                                    mediaidadem = mediaidadem + idade;
+                                    homem++;
+                           }
+                  }
+                  if(idade>= 21 && idade<=53){
+                           percentual++;
+                  }
+                  mediaidade = mediaidade + idade;
+         }
+         printf("a media da idade do grupo é %f\n", mediaidade/i);
+         printf("a media da altura das mulheres é %f\n", mediaaltura/mulher);
+         printf("a media da idade dos homens é %f\n", mediaidadem/homem);
+         printf("percentual de pessoas com idade entre 21 e 53 anos é %f\n", (percentual*100)/i);
+}

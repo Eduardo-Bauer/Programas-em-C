@@ -1,0 +1,38 @@
+// exer 30
+// Autor : Eduardo Bauer
+// Data : 16/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, sexo, salario, maior, menor, pouco, media, total;
+         maior = 0;
+         menor = 9999999;
+         media = 0;
+         pouco = 0;
+         total = 0;
+         while(i>=0){
+                  printf("digite a idade do habitante\n");
+                  scanf("%d", &i);
+                  if(i>=0){
+                  printf("qual o sexo, digite 1 para masculino e 2 para feminino\n");
+                  scanf("%d", &sexo);
+                  printf("sigite o salario\n");
+                  scanf("%d", &salario);
+                  total = total+salario;
+                  if(i>maior){
+                           maior = i;
+                  }
+                  if(i<menor){
+                           menor = i;
+                  }
+                  if(sexo== 2 && salario<=500){
+                           pouco++;
+                  }
+                  media++;
+                  }
+         }
+         printf("a media de salario dos habitantes é: %d\n", total/media);
+         printf("a maior idade é %d\n", maior);
+         printf("a menor idade é %d\n", menor);
+         printf("a quantidade de mulheres com salario até 500 é %d\n", pouco);
+}

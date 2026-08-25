@@ -1,0 +1,17 @@
+// exer 36
+// Autor : Eduardo Bauer
+// Data : 17/10/2023
+#include<stdio.h>
+void main()
+{
+         float i, n, s, soma;
+         s = 1;
+         printf("digite o numero final\n");
+         scanf("%f", &n);
+         for(i=2;i<=n;i++){
+                  printf("%f\n", i);
+                  soma = soma + 1/i;
+         }
+         s = s + soma;
+         printf("%f\n", s);
+}

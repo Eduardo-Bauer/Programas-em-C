@@ -1,0 +1,29 @@
+// exer 8
+// Autor : eduar
+// Data : 13/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, a, b, soma, j, divi;
+         a = 0;
+         b = 1;
+         for(i=0;i<=50;i++){
+                  soma = a+b;
+                  a = b;
+                  b = soma;
+                  divi=0;
+                  printf("%d\n", soma);
+                  for(j=1;j<=soma;j++){
+                           if(soma%j==0){
+                                    divi++;
+                           }
+                  }
+                  if(divi==2){
+                                    printf("e primo\n");
+                           } else {
+                                    if(divi>2){
+                                             printf("nao e primo\n");
+                                    }
+                           }
+         }
+}

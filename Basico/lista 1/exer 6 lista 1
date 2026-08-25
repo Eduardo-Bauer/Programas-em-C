@@ -1,0 +1,14 @@
+// exer 6 lista 1
+// Autor : Eduardo Bauer
+// Data : 02/01/2024
+#include<stdio.h>
+void main()
+{
+         float p, u, r;
+         printf("digite os valores de p e u:\n");
+         scanf("%f%f", &p, &u);
+         printf("digite a razao da progressao:\n");
+         scanf("%f", &r);
+         p = (p+u)/r;
+         printf("%f", p);
+}

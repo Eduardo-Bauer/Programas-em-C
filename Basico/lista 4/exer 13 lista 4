@@ -1,0 +1,44 @@
+// exer 13 lista 4
+// Autor : Eduardo Bauer
+// Data : 26/11/2023
+#include<stdio.h>
+void main()
+{
+         int x[10], y[10], i, j, z[20], cont, igual;
+         cont = 10;
+         for(i=0;i<10;i++){
+                  printf("digite o valor de x:\n");
+                  scanf("%d", &x[i]);
+         }
+         for(i=0;i<10;i++){
+                  printf("digite o valor de y:\n");
+                  scanf("%d", &y[i]);
+         }
+         for(i=0;i<10;i++){
+                  printf("%d ", x[i]);
+         }
+         printf("\n");
+         for(i=0;i<10;i++){
+                  printf("%d ", y[i]);
+         }
+         
+         for(i=0;i<10;i++){
+                  z[i] = x[i];
+         }
+         for(i=0;i<10;i++){
+                  igual = 0;
+                  for(j=0;j<10;j++){
+                           if(y[i] == z[j]){
+                                    igual = 1;
+                           }
+                  }
+                  if(igual==0){
+                           z[cont] = y[i];
+                           cont++;
+                  }
+         }
+         printf("\n");
+         for(i=0;i<cont;i++){
+                  printf("%d ", z[i]);
+         }
+}

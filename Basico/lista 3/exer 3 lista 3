@@ -1,0 +1,22 @@
+// exer  3
+// Autor : Eduardo Bauer
+// Data : 13/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, n, dentro, fora;
+
+          for(i=0;i<10;i++){
+
+                   printf("digite um numero\n");
+                   scanf("%d", &n);
+
+                   if(n>10 && n<20){
+                            dentro++;
+                   } else {
+                            fora++;
+                   }
+          }
+          printf("dentro: %d\n", dentro);
+          printf("fora: %d\n", fora);
+}

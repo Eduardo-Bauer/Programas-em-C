@@ -1,0 +1,23 @@
+// exer 6 lista 4
+// Autor : Eduardo Bauer
+// Data : 24/11/2023
+#include<stdio.h>
+void main()
+{
+         int n[80], i, j, menor, pos;
+         menor = 9999999;
+         for(i=0;i<80;i++){
+                  printf("digite os valores de n:\n");
+                  scanf("%d", &n[i]);
+                  if(n[i]< menor){
+                           menor = n[i];
+                           pos = i;
+                  }
+         }
+         for(i=0;i<80;i++){
+                  printf("%d ", n[i]);
+         }
+         printf("\n");
+         printf("o menor elemento e %d\n", menor);
+         printf("sua posicao e %d\n", pos);
+}

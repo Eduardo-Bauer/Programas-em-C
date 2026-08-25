@@ -1,0 +1,27 @@
+// exer 24
+// Autor : Eduardo Bauer
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, aluno, altura, maior, menor, p1, p2;
+         maior = 0;
+         menor = 99999;
+         for(i=0;i<5;i++){
+                  printf("digite o numero do aluno\n");
+                  scanf("%d", &aluno);
+                  printf("digite a altura em centimetros\n");
+                  scanf("%d", &altura);
+                  if(altura>maior){
+                           maior = altura;
+                           p1 = aluno;
+                  } else {
+                           if(altura<menor){
+                                    menor = altura;
+                                    p2 = aluno;
+                           }
+                  }
+         }
+         printf("o mais alto é %d, com %d cm\n", p1, maior);
+         printf("o mais baixo é %d, com %d cm\n", p2, menor);
+}

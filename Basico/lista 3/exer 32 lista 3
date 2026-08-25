@@ -1,0 +1,33 @@
+// exer 32
+// Autor : Eduardo Bauer
+// Data : 16/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, impares, pares, n, par, impar;
+         float mediapar, mediaimpar, mediageral;
+         pares = 0;
+         impares = 0;
+         par = 0;
+         impar = 0;
+         do{
+                  printf("digite um numero\n");
+                  scanf("%d", &n);
+                  if(n>0){
+                           if(n%2==0){
+                                    pares = pares+n;
+                                    par++;
+                           } else {
+                                    impares = impares+n;
+                                    impar++;
+                           }
+                           i++;
+                  }
+         }while(n>0);
+         mediapar = pares/i;
+         mediaimpar = impares/i;
+         mediageral = (pares+impares)/i;
+         printf("a quantidade de pares é %d e impares é %d\n", par, impar);
+         printf("a media dos pares é %f e a media dos impares é %f\n", mediapar, mediaimpar);
+         printf("a media geral é %f\n", mediageral);
+}

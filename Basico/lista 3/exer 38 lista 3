@@ -1,0 +1,37 @@
+// exer 38
+// Autor : Eduardo Bauer
+// Data : 18/10/2023
+#include<stdio.h>
+void main()
+{
+         int maiorm, maiorf, menorm, menorf, sexo, altura, i;
+         maiorm = 0;
+         maiorf = 0;
+         menorm = 99999999;
+         menorf = 99999999;
+         for(i=0;i<6;i++){
+                  printf("digite seu sexo, sendo 1 para nasculino e 2 para feminino\n");
+                  scanf("%d", &sexo);
+                  printf("digite sua altura\n");
+                  scanf("%d", &altura);
+                  if(sexo==1){
+                           if(altura>maiorm){
+                                    maiorm = altura;
+                           }
+                           if(altura<menorm){
+                                    menorm = altura;
+                           }
+                  } else {
+                           if(sexo==2){
+                                    if(altura>maiorf){
+                                             maiorf = altura;
+                                    }
+                                    if(altura<menorf){
+                                             menorf = altura;
+                                    }
+                           }
+                  }
+         }
+         printf("o maior dos masculinos é %d e o menor é %d\n", maiorm, menorm);
+         printf("o maior dos femininos é %d e o menor é %d\n", maiorf, menorf);
+}

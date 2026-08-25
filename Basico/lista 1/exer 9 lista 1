@@ -1,0 +1,28 @@
+// exer 9 lista 1
+// Autor : Eduardo Bauer
+// Data : 02/01/2024
+#include<stdio.h>
+void main()
+{
+         int salario, resto, nota100, nota50, nota20, nota10, nota5, nota1;
+         printf("digite o salario do funcionario:\n");
+         scanf("%d", &salario);
+         nota100 = salario/100;
+         resto = salario%100;
+         
+         nota50 = resto/50;
+         resto = resto%50;
+         
+         nota20 = resto/20;
+         resto = resto%20;
+
+         nota10 = resto/10;
+         resto = resto%10;
+
+         nota5 = resto/5;
+         resto = resto%5;
+
+         nota1 = resto;
+
+         printf("as notas ficaram: %d, %d, %d, %d, %d, %d", nota100, nota50, nota20, nota10, nota5, nota1);
+}

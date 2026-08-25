@@ -1,0 +1,17 @@
+// exer 10 lista 1
+// Autor : Eduardo Bauer
+// Data : 02/01/2024
+#include<stdio.h>
+void main()
+{
+         int vendedor, salario;
+         float vendas, percentual, total;
+         printf("digite o numero de um vendedor e seu salario:\n");
+         scanf("%d%d", &vendedor, &salario);
+         printf("digite o numero de vendas e seu percentual de vendas\n");
+         scanf("%f%f", &vendas, &percentual);
+         total = salario;
+         vendas = vendas*(percentual/100);
+         total = total + vendas;
+         printf("o salario total do vendedor %d e %f", vendedor, total);
+}

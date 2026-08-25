@@ -1,0 +1,27 @@
+// exer 22
+// Autor : eduar
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int identi, salario, vendas, comissao;
+         do{
+                  printf("qual seu numero de identificação:\n");
+                  scanf("%d", &identi);
+                  printf("qual seu salario fixo:\n");
+                  scanf("%d", &salario);
+                  printf("qual foi seu total de vendas:\n");
+                  scanf("%d", &vendas);
+                  if(vendas<=10000){
+                           comissao = vendas*0.03;
+                  } else {
+                           if(vendas>10000){
+                                    comissao = vendas*0.05;
+                           }
+                  }
+                  printf("identidade: %d\n", identi);
+                  printf("seu salario: %d\n", salario);
+                  printf("seu salario total: %d\n", salario+comissao);
+         }while(identi>0);
+         
+}

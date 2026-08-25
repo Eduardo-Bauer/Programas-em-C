@@ -1,0 +1,31 @@
+// exer 18
+// Autor : Eduardo Bauer
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, salario, filhos, maior;
+         float mediaf, mediad, percentual;
+         maior = 0;
+         do{
+                  printf("digite o seu salario\n");
+                  scanf("%d", &salario);
+                  if(salario>=0){
+                           printf("digite seu numero de filhos\n");
+                           scanf("%d", &filhos);
+                           mediaf = mediaf+filhos;
+                           mediad = mediad+salario;
+                           if(salario<=400){
+                           percentual++;
+                           }
+                           if(salario>maior){
+                                    maior = salario;
+                           }
+                           i++;
+                  }
+         }while(salario>=0);
+         printf("media do salario: %f\n", mediad/i);
+         printf("media de filhos: %f\n", mediaf/i);
+         printf("o maior salario e: %d\n", maior);
+         printf("o percentual de pessoas com salario ate 400 e: %f\n", percentual*100/i); 
+}

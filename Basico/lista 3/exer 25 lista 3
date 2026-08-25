@@ -1,0 +1,17 @@
+// exer 25
+// Autor : Eduardo Bauer
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         float v, a, t, d, p;
+         printf("digite a velocidade do avião em km/h\n");
+         scanf("%f", &v);
+         printf("digite a altura do aviao em metros\n");
+         scanf("%f", &a);
+         v = v/3.6;
+         for(t=1;t<=30;t++){
+                  d = v*t;
+                  printf("%f segundos - distancia: %.2f metros\n", t, d); 
+         }
+}

@@ -1,0 +1,32 @@
+// exer 20 lista 4
+// Autor : Eduardo Bauer
+// Data : 28/11/2023
+#include<stdio.h>
+void main()
+{
+         int v[20], i, j, k, cont;
+         cont = 20;
+         for(i=0;i<20;i++){
+                  printf("digite os valores de v:\n");
+                  scanf("%d", &v[i]);
+         }
+         for(i=0;i<20;i++){
+                  printf("%d ", v[i]);
+         }
+         printf("\n");
+         for(i=0;i<cont;i++){
+                  for(j=i+1;j<cont;){
+                           if(v[i] == v[j]){
+                                    for(k=j;k<cont-1;k++){
+                                             v[k] = v[k+1];
+                                    }
+                                    cont = cont-1;
+                           } else{
+                                    j++;
+                           }
+                  }
+         }
+         for(i=0;i<cont;i++){
+                  printf("%d ", v[i]);
+         }
+}

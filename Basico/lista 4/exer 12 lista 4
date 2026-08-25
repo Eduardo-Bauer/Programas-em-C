@@ -1,0 +1,24 @@
+// exer 12 lista 4
+// Autor : Eduardo Bauer
+// Data : 26/11/2023
+#include<stdio.h>
+void main()
+{
+         int n[10], m[10], i;
+         for(i=0;i<10;i++){
+                  printf("digite os valores de n:\n");
+                  scanf("%d", &n[i]);
+         }
+
+         for(i=0;i<10;i++){
+                  printf("digite os valores de m:\n");
+                  scanf("%d", &m[i]);
+         }
+
+         for(i=0;i<10;i++){
+                  n[i] = n[i]*m[i];
+         }
+         for(i=0;i<10;i++){
+                  printf("%d ", n[i]);
+         }
+}

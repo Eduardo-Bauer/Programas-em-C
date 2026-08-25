@@ -1,0 +1,24 @@
+// exer 10 lista 4
+// Autor : Eduardo Bauer
+// Data : 26/11/2023
+#include<stdio.h>
+void main()
+{
+         int m[20], i, aux;
+         for(i=0;i<20;i++){
+                  printf("digite o valores de m:\n");
+                  scanf("%d", &m[i]);
+         }
+         for(i=0;i<20;i++){
+                  printf("%d ", m[i]);
+         }
+         printf("\n");
+         for(i=0;i<10;i++){
+                  aux = m[i];
+                  m[i] = m[i+10];
+                  m[i+10] = aux;
+         }
+         for(i=0;i<20;i++){
+                  printf("%d ", m[i]);
+         }
+}

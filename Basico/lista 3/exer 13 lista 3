@@ -1,0 +1,18 @@
+// exer 13
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int n, i, veses, j;
+         i = 0;
+         do{
+                  printf("digite o valor de n:\n");
+                  scanf("%d", &n);
+                  for(j=1;j<=10;j++){
+                           veses = j*n;
+                           printf("%d x %d = %d\n", j, n, veses);
+                  }
+                  i++;
+         }while(i<10);
+}

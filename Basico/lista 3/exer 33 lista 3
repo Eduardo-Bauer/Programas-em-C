@@ -1,0 +1,24 @@
+// exer 33
+// Autor : Eduardo Bauer
+// Data : 17/10/2023
+#include<stdio.h>
+void main()
+{
+         int codigo, valor, i, bonus;
+         do{
+                           printf("digite o codigo do produto\n");
+                           scanf("%d", &codigo);
+                  if(codigo>0){
+                           printf("digite o valor do produto\n");
+                           scanf("%d", &valor);
+                           if(codigo%2==0){
+                                    bonus = valor*0.15;
+                                    valor = valor+bonus;
+                           } else {
+                                    bonus = valor*0.20;
+                                    valor = valor+bonus;
+                           }
+                           printf("o produto %d vai ficar com o valor %d\n", codigo, valor); 
+                  }
+         }while(codigo>0);
+}

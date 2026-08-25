@@ -1,0 +1,23 @@
+// exer 12
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, primos,j, divi;
+         primos = 0;
+
+         for(i=101;i<200;i++){
+                  divi=0;
+                  for(j=1;j<=i;j++){
+                           if(i%j==0){
+                                    divi++;
+                           }
+                  }
+                  if(divi==2){
+                           printf("primos: %d\n", i);
+                           primos = primos+i;
+                  }
+         }
+         printf("%d", primos);
+}

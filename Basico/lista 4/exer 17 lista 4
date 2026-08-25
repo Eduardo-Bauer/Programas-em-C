@@ -1,0 +1,33 @@
+// exer 17 lista 4
+// Autor : eduar
+// Data : 28/11/2023
+#include<stdio.h>
+void main()
+{
+         int des[50], maior, despesas, cont, sim, i;
+         cont=0;
+         sim = 1;
+         maior = -999999;
+         despesas = 0;
+         while(sim == 1){
+                  printf("digite os valores:\n");
+                  scanf("%d", &des[cont]);
+                  if(des[cont] > maior){
+                           maior = des[cont];
+                  }
+                  cont++;
+                  printf("deseja continuar? 1 para sim e 0 para nao:\n");
+                  scanf("%d", &sim);
+         }
+         for(i=0;i<cont;i++){
+                  despesas = despesas+des[i];
+         }
+         despesas = despesas-maior;
+         printf("o valor da receita e %d\n", maior);
+         printf("o valor das despesas e %d\n", despesas);
+         if(despesas > 0){
+                  printf("voce obteve lucro\n");
+         } else {
+                  printf("voce obteve prejuizo");
+         }
+}

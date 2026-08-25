@@ -1,0 +1,21 @@
+// exer 5 lista 4
+// Autor : Eduardo Bauer
+// Data : 21/11/2023
+#include<stdio.h>
+void main()
+{
+         int c[50], i, maior;
+         maior = -999999;
+         for(i=0;i<50;i++){
+                  printf("digite os valores de c\n");
+                  scanf("%d", &c[i]);
+                  if(c[i] > maior){
+                           maior = c[i];
+                  }
+         }
+         for(i=0;i<50;i++){
+                  printf("%d ", c[i]);
+         }
+         printf("\n");
+         printf("%d E O MAIOR", maior);
+}

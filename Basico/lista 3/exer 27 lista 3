@@ -1,0 +1,20 @@
+// exer 27
+// Autor : Eduardo Bauer
+// Data : 16/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, j, soma, aux;
+         for(i=1;aux<5;i++){
+                  soma = 0;
+                  for(j=1;j<i;j++){
+                           if(i%j==0){
+                                    soma = soma+j;
+                           }
+                  }
+                  if(soma==i){
+                           printf("%d\n",i);
+                           aux++;
+                  }
+         }
+}

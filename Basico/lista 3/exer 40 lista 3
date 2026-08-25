@@ -1,0 +1,33 @@
+// exer 40
+// Autor : Eduardo Bauer
+// Data : 18/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, codigo, veiculos, acidentes, maior, menor, cidademaior, cidademenor;
+         float mediaveiculos, mediaacidente;
+         maior = -999999;
+         menor = 9999999;
+         for(i=0;i<20;i++){
+                  printf("digite o codigo da cidade\n");
+                  scanf("%d", &codigo);
+                  printf("digite o numero de veiculos de passeio do ano passado\n");
+                  scanf("%d", &veiculos);
+                  printf("digite o numero de acidentes com vitimas do ano passado\n");
+                  scanf("%d", &acidentes);
+                  if(acidentes>maior){
+                           maior = acidentes;
+                           cidademaior = codigo;
+                  }
+                  if(acidentes<menor){
+                           menor = acidentes;
+                           cidademenor = codigo;
+                  }
+                  mediaveiculos = mediaveiculos+veiculos;
+                  mediaacidente = mediaacidente+acidentes;
+         }
+         printf("o maior indice de acidentes é %d, com %d acidentes\n", cidademaior, maior);
+         printf("o menor indice de acidentes é %d, com %d acidentes\n", cidademenor, menor);
+         printf("a media de veiculos nas cidades é %f\n", mediaveiculos/i);
+         printf("a media de acidentes entre as %d cidades é %f\n", i, mediaacidente/i);
+}

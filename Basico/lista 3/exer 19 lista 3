@@ -1,0 +1,45 @@
+// exer 20
+// Autor : eduar
+// Data : 15/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, codigo, candidato1, candidato2, candidato3, candidato4, nulo;
+         float branco;
+         do{
+                  printf("digite o cogido do candidato\n");
+                  scanf("%d", &codigo);
+                  if(codigo==1){
+                           candidato1++;
+                  } else{
+                           if(codigo==2){
+                                    candidato2++;
+                           } else{
+                                    if(codigo==3){
+                                             candidato3++;
+                                    } else{
+                                             if(codigo==4){
+                                                      candidato4++;
+                                             } else{
+                                                      if(codigo==5){
+                                                               nulo++;
+                                                      } else{
+                                                               if(codigo==6){
+                                                                        branco++;
+                                                               }
+                                                      }
+                                             }
+                                    }
+                           }
+                  }
+                  if(codigo>0){
+                           i++;
+                  }
+         }while(codigo>0);
+         printf("Votos no candidato 1: %d\n", candidato1);
+         printf("Votos no candidato 2: %d\n", candidato2);
+         printf("Votos no candidato 3: %d\n", candidato3);
+         printf("Votos no candidato 4: %d\n", candidato4);
+         printf("Votos em nulo: %d\n", nulo);
+         printf("O percentual de votos em branco: %f\n", (branco*100)/i);
+}

@@ -1,0 +1,42 @@
+// exer 5
+// Autor : Eduardo Bauer
+// Data : 13/10/2023
+#include<stdio.h>
+void main()
+{
+         int n, inter1, inter2, inter3, inter4, soma1, soma2, soma3, soma4;
+
+         do{
+                  printf("digite um numero\n");
+                  scanf("%d", &n);
+
+                  if(n>=0 && n<25){
+                           inter1++;
+                           soma1 = soma1+n;
+                  } else {
+                           if(n>=25 && n<50){
+                                    inter2++;
+                                    soma2 = soma2 + n;
+                           } else {
+                                    if(n>=50 && n<75){
+                                             inter3++;
+                                             soma3 = soma3 + n;
+                                    } else {
+                                             if(n>=75 && n<100){
+                                                      inter4++;
+                                                      soma4 = soma4 + n;
+                                             }
+                                    }
+                           }
+                  }
+         }while(n<=100);
+         printf("intervalo de0 a25 : %d\n", inter1);
+         printf("intervalo de25 a50 : %d\n", inter2);
+         printf("intervalo de50 a75 : %d\n", inter3);
+         printf("intervalo de75 a100: %d\n", inter4);
+         printf("a media do primeiro intervalo e: %d\n", soma1/inter1);
+         printf("a media do segundo intervalo e: %d\n", soma2/inter2);
+         printf("a media do terceiro intervalo e: %d\n", soma3/inter3);
+         printf("a media do quarto intervalo e: %d\n", soma4/inter4);
+         
+}

@@ -1,0 +1,10 @@
+// exer 3 lista 1
+// Autor : Eduardo Bauer
+// Data : 28/12/2023
+#include<stdio.h>
+void main()
+{
+         int valor;
+         valor = 1*2*3*4*5;
+         printf("o valor do fatorial de 5 e %d", valor);
+}

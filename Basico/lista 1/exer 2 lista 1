@@ -1,0 +1,20 @@
+// exer 2 lista 1
+// Autor : Eduardo Bauer
+// Data : 28/12/2023
+#include<stdio.h>
+void main()
+{
+         int numero, horas, valor, filhos, valorfilho, salario;
+         printf("digite seu numero:\n");
+         scanf("%d", &numero);
+         printf("digite o numero de horas trabalhadas:\n");
+         scanf("%d", &horas);
+         printf("digite o valor por horas:\n");
+         scanf("%d", &valor);
+         printf("digite quantos filhos menores de 14 anos:\n");
+         scanf("%d", &filhos);
+         printf("digite o valor por filho menor de 14 anos:\n");
+         scanf("%d", &valorfilho);
+         salario = horas*valor+ (valorfilho*filhos);
+         printf("voce, %d, tem o salario de %d", numero, salario);
+}

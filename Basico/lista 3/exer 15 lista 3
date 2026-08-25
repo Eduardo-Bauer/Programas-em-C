@@ -1,0 +1,17 @@
+// exer 15
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, m, n, soma;
+         do{
+                  printf("digite o valor de m e n, sendo m menor\n");
+                  scanf("%d%d", &m, &n);
+                  soma = 0;
+                  for(i=m;i<=n;i++){
+                           soma = soma + i;
+                  }
+                  printf("soma: %d\n", soma);
+         }while(m>0);
+}

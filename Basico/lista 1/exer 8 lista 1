@@ -1,0 +1,14 @@
+// exer 8 lista 1
+// Autor : Eduardo Bauer
+// Data : 02/01/2024
+#include<stdio.h>
+void main()
+{
+         float a, v;
+         printf("digite a altura do aviao e a sua velocidade em kilometros por hora:\n");
+         scanf("%f%f", &a, &v);
+         v = v/3.6;
+         v = v*30;
+         a = a - v;
+         printf("a distancia do aviao ao pornto p apos 30 segundos e %f", a);
+}

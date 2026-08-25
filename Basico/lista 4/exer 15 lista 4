@@ -1,0 +1,58 @@
+// exer 15 lista 4
+// Autor : eduar
+// Data : 26/11/2023
+#include<stdio.h>
+void main()
+{
+         int k[10], n[10], m[20], cont, i, j, igual, aux;
+         aux = 10;
+         cont = 0;
+         for(i=0;i<10;i++){
+                  printf("digite os valores de k:\n");
+                  scanf("%d", &k[i]);
+         }
+         for(i=0;i<10;i++){
+                  printf("digite os valores de n:\n");
+                  scanf("%d", &n[i]);
+         }
+
+         for(i=0;i<10;i++){
+                  printf("%d ", k[i]);
+         }
+         printf("\n");
+         for(i=0;i<10;i++){
+                  printf("%d ", n[i]);
+         }
+         printf("\n");
+         for(i=0;i<10;i++){
+                  igual = 0;
+                  for(j=0;j<10;j++){
+                           if(k[i]==n[j]){
+                                    igual = 1;
+                                    j = 10;
+                           }
+                  }
+                  if(igual == 0){
+                           m[cont] = k[i];
+                           cont++;
+                  }
+         }
+         for(i=0;i<10;i++){
+                  igual = 0;
+                  for(j=0;j<10;j++){
+                           if(n[i]==k[j]){
+                                    igual = 1;
+                                    j = 10;
+                           }
+                  }
+                  if(igual == 0){
+                           m[cont] = n[i];
+                           cont++;
+                  }
+         }
+         for(i=0;i<cont;i++){
+                  printf("%d ", m[i]);
+         }
+         
+}
+

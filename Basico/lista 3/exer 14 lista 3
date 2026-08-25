@@ -1,0 +1,17 @@
+// exer 14
+// Autor : Eduardo Bauer
+// Data : 14/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, a, b, j;
+         for(j=0;j<5;j++){
+                  printf("digite o valor de a e b\n");
+                  scanf("%d%d", &a, &b);
+                  for(i=a;i<=b;i++){
+                           if(i%2==0){
+                                    printf("%d\n", i);
+                           }
+                  }
+         }
+}

@@ -1,0 +1,39 @@
+// exer 10
+// Autor : Eduardo Bauer
+// Data : 13/10/2023
+#include<stdio.h>
+void main()
+{
+         int i, m, j, divi, fatorial, soma;
+         i = 0;
+         do{
+                  printf("digite o valor de m\n");
+                  scanf("%d", &m);
+                  divi= 0;
+                  fatorial = 1;
+                  soma = 0;
+                  if(m%2==0){
+                           for(j=1;j<=m;j++){
+                                    if(m%j==0){
+                                             divi++;
+                                    }
+                           }
+                           printf("possui %d divisores\n", divi);
+                  }else {
+                           if(m<12){
+                                    for(j=1;j<=m;j++){
+                                             fatorial = fatorial*j;
+                                    }
+                                    printf("fatorial de m e: %d\n", fatorial);
+                           }else{
+                                    if(m>12){
+                                             for(j=1;j<=m;j++){
+                                                      soma = soma+j;
+                                             }
+                                             printf("a soma dos inteiros e: %d\n", soma);
+                                    }
+                           }
+                  }
+                  i++;
+         }while(m>=0);
+}

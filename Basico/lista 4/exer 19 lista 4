@@ -1,0 +1,32 @@
+// exer 19 lista 4
+// Autor : Eduardo Bauer
+// Data : 28/11/2023
+#include<stdio.h>
+void main()
+{
+         int k[15], n[15], primos, i, j, divi;
+         primos = 0;
+         for(i=0;i<15;i++){
+                  printf("digite os valores de k:\n");
+                  scanf("%d", &k[i]);
+         }
+         for(i=0;i<15;i++){
+                  printf("%d ", k[i]);
+         }
+         printf("\n");
+         for(i=0;i<15;i++){
+                  divi = 0;
+                  for(j=1;j<=k[i];j++){
+                           if(k[i]%j==0){
+                                    divi++;
+                           }
+                  }
+                  if(divi==2){
+                           n[primos] = k[i];
+                           primos++;
+                  }
+         }
+         for(i=0;i<primos;i++){
+                  printf("%d ", n[i]);
+         }
+}

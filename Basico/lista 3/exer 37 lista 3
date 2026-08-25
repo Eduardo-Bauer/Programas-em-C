@@ -1,0 +1,31 @@
+// exer 37
+// Autor : Eduardo Bauer
+// Data : 17/10/2023
+#include<stdio.h>
+void main()
+{
+         float media, peso;
+         int numero;
+         media = 0;
+         peso = 0;
+         do {
+                  printf("digite o numero\n");
+                  scanf("%d", &numero);
+                  if(numero>0){
+                           if(numero%2!=0){
+                                    peso = peso+1;
+                                    media = media + numero*1;
+                           } else {
+                                    if(numero%2==0 && (numero>=13 && numero<=77)){
+                                             peso = peso+2;
+                                             media = media + numero*2;
+                                    } else {
+                                             peso = peso+1;
+                                             media = media + numero*1;
+                                    }
+                           }
+                  }
+         }while(numero>0);
+         media = media/peso;
+         printf("%f", media);
+}
